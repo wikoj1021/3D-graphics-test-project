@@ -1,15 +1,9 @@
 package window;
 
-import java.awt.Color;
-import java.awt.Graphics;
-import javax.swing.JPanel;
+import java.awt.*;
+import javax.swing.*;
 
-import object3d.Axis;
-import object3d.Camera;
-import object3d.Connection;
-import object3d.Cube;
-import object3d.Object3d;
-import object3d.Origin;
+import object3d.*;
 import object3d.Point;
 
 public class Painter extends JPanel{

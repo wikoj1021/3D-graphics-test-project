@@ -4,8 +4,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import window.EventGet;
-import window.Window;
+import window.*;
 
 public class Main {
 	

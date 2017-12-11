@@ -1,10 +1,6 @@
 package window;
 
-import java.awt.event.KeyAdapter;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-
-import javax.swing.JFrame;
+import javax.swing.*;
 
 public class Window extends JFrame{
 

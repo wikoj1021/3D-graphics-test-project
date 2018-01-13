@@ -6,6 +6,7 @@ public class Object3d {
 
 	Vector<Point> points;
 	Vector<Connection> connections;
+	Origin origin;
 	
 	public Object3d() {
 		

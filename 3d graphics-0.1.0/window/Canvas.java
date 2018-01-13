@@ -5,7 +5,9 @@ import object3d.*;
 
 public class Canvas extends Painter{
 
-	public Canvas() {
+	public Canvas(Logs log, int winWidth, int winHeight) {
+		
+		super(log, winWidth, winHeight);
 		
 		setBackground(Color.BLACK);
 		

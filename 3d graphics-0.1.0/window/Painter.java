@@ -11,7 +11,7 @@ public class Painter extends JPanel{
 	Camera camera;
 	object3d.Cube cube;
 	Object3d obj;
-	Logs log;
+	//Logs log;
 	
 	double cx,cy;
 	
@@ -20,9 +20,9 @@ public class Painter extends JPanel{
 	
 	int dotSize = 10;
 	
-	public Painter(Logs log, int winWidth, int winHeight) {
+	public Painter(/*Logs log, */int winWidth, int winHeight) {
 
-		this.log = log;
+		//this.log = log;
 		
 		camera = new Camera(new Origin(0, 0, 0));
 		
@@ -53,10 +53,10 @@ public class Painter extends JPanel{
 		
 		int i = 0;
 		
-		log.printLog("_______start points_______");
+		/*log.printLog("_______start points_______");
 		log.endLine();
 		log.endLine();
-		log.endLine();
+		log.endLine();*/
 		
 		for (Point point: o.getPoints()) {
 			
@@ -64,7 +64,7 @@ public class Painter extends JPanel{
 			double y = point.getY();
 			double z = point.getZ();
 			
-			log.printLog("points:");
+			/*log.printLog("points:");
 			log.endLine();
 			log.printLog("x : "+x+" y: "+y+" z: "+z);
 			log.endLine();
@@ -75,14 +75,14 @@ public class Painter extends JPanel{
 			log.endLine();
 			
 			log.printLog("points & camera: ");
-			log.endLine();
+			log.endLine();*/
 
 			x += camera.origin.getX();
 			y += camera.origin.getY();
 			z += camera.origin.getZ();
 			
-			log.printLog("x : "+x+" y: "+y+" z: "+z);
-			log.endLine();
+			/*log.printLog("x : "+x+" y: "+y+" z: "+z);
+			log.endLine();*/
 			
 			if(z > 0) {
 				
@@ -92,9 +92,9 @@ public class Painter extends JPanel{
 				x = x/f;
 				y = y/f;
 				
-				log.printLog("x : "+x+" y: "+y+" f: "+f);
+				/*log.printLog("x : "+x+" y: "+y+" f: "+f);
 				log.endLine();
-				
+				*/
 				g.setColor(Color.CYAN);
 				
 				g.drawOval((int)x-(int)(dotSize/2), (int)y-(int)(dotSize/2), dotSize, dotSize);
@@ -102,17 +102,17 @@ public class Painter extends JPanel{
 				i++;
 			}
 			else {
-				log.printLog("not drawing");
-				log.endLine();
+				/*log.printLog("not drawing");
+				log.endLine();*/
 			}
 			
-			log.endLine();
-			log.endLine();
+			/*log.endLine();
+			log.endLine();*/
 		}
 	
-		log.printLog("_______end points_______");
+		/*log.printLog("_______end points_______");
 		log.endLine();
-		log.endLine();
+		log.endLine();*/
 	}
 	
 	void drawObjectConnections(Graphics g,Object3d o) {
@@ -129,8 +129,8 @@ public class Painter extends JPanel{
 		
 		//int i = 0;
 		
-		log.printLog("_______start points_______");
-		log.endLine();
+		/*log.printLog("_______start points_______");
+		log.endLine();*/
 		
 		for (Connection connection: o.getConnetions()) {
 			

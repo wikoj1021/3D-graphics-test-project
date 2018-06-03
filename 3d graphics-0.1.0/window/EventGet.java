@@ -81,7 +81,7 @@ public class EventGet extends Window{
 			@Override
 			public void windowClosed(WindowEvent e) {
 				
-				log.closeStream();
+				//log.closeStream();
 				
 			}
 			
@@ -174,14 +174,14 @@ public class EventGet extends Window{
 	}
 	
 	void rotate(MouseEvent e) {
-		/*
+		
 		int x = e.getX();
 		int y = e.getY();
 		
 		if(!isFirstMouse) {
 			
-			canvas.camera.rotation[0] += Math.toRadians((double)(lastMousePosX - x));
-			canvas.camera.rotation[1] += Math.toRadians((double)(lastMousePosY - y));
+			canvas.camera.rotation[0] += Math.toRadians((double)(lastMousePosX - x)/100);
+			canvas.camera.rotation[1] += Math.toRadians((double)(lastMousePosY - y)/100);
 			
 		}		
 		
@@ -191,7 +191,7 @@ public class EventGet extends Window{
 		isFirstMouse = false;
 		
 		canvas.repaint();
-		*/
+		
 	}
 	
 	void startRotate(MouseEvent e){
